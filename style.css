@@ -13,17 +13,17 @@ svg{
 
 }
 svg path{
-    fill: #0A6EBD;
+    fill: rgb(210, 210, 210);
 }
 .updating{
-    color: #0A6EBD;
+    color: rgb(210, 210, 210);
     font-size: 20px;
     font-weight: bold;
     position: absolute;
     top:440px;
 }
 .soon{
-    color: gray;
+    color: rgb(210, 210, 210);
     font-size: 16px;
         position: absolute;
             top: 480px;
