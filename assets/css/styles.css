@@ -228,6 +228,7 @@ img {
   right: 0;
   bottom: 0;
   width: 260px;
+  margin-bottom: 35px;
 }
 
 .home__blob {
@@ -235,7 +236,7 @@ img {
 }
 
 .home__blob-img {
-  width: 447px;
+  width: 445px;
   transform: translateX(-7%);
 }
 
@@ -539,7 +540,6 @@ img {
   }
   .home__img {
     width: 200px;
-    margin-bottom: 35px;
   }
 }
 
