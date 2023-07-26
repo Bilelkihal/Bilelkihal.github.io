@@ -1,30 +1,285 @@
 *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: poppins;
+    color: white;
+    text-decoration: none;
+    line-height: 1.2;
 }
-.container{
+body{
+    background-color: #1B1B1B;
+}
+.center{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
 }
-svg{
-    width: 300px;
+.page-container{
+    width: 1500px;
+    margin: 0 200px;
+}
+
+.logo{
+    font-size: 30px;
+}
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    margin-top: 10px;
 
 }
-svg path{
-    fill: rgb(210, 210, 210);
-}
-.updating{
-    color: rgb(210, 210, 210);
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    top:440px;
-}
-.soon{
-    color: rgb(210, 210, 210);
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
     font-size: 16px;
-        position: absolute;
-            top: 480px;
+}
+nav ul li{
+    margin: 0 21px;
+}
+nav ul li a{
+    color: white;
+    opacity: 40%;
+    transition: all ease 0.3s;
+}
+nav ul li a:hover {
+    opacity: 100%;
+}
+.contact-button{
+    background-color: #323232;
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-left: 24px;
+    transition: background-color ease 0.3s;
+}
+.contact-button:hover{
+    background-color: #404040;
+}
+.landing-picture img{
+    width: 400px;
+}
+.landing-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.landing-info{
+    margin-top: 20px;
+}
+.hello{
+    font-size: 20px;
+    color: #838383;
+    font-weight: 300;
+    line-height: 1.8;
+}
+.name{
+    font-size: 40px;
+    font-weight: 700;
+}
+.job-title{
+    font-size: 30px;
+    font-weight: 400;
+}
+.location{
+    display: flex;
+    
+    
+}
+.location div{
+    color: #838383;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 10px;
+    line-height: 1.8;
+}
+.view-my-work-button{
+    background-color: #102367;
+    font-size: 16px;
+    padding: 18px 40px;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin: 12px 0;
+    cursor: pointer;
+    transition: background-color ease 0.3s;
+}
+.view-my-work-button:hover{
+    background-color: #1f2f62;
+}
+.social-media-icons{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 11px;
+}
+.social-media-icons a{
+    margin-right: 24px;
+}
+.scroll-animation-container{
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-animation-container circle{
+    animation: moveUpAndDown 3s infinite;
+}
+
+@keyframes moveUpAndDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-22px);
+    }
+}
+
+.about-section{
+    display: flex;
+    margin-top: 90px;
+}
+
+.about-section img{
+    width: 390px;
+}
+
+
+.hide{
+    display: none;
+}
+.about-section > div{
+    background-color: #202020;
+    padding: 38px;
+    margin-left: 26px;
+    border-radius: 14px;
+}
+
+.about-section-title{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-section hr{
+    width: 37px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.about-section-decription{
+    margin-top: 15px;
+    line-height: 1.7;
+    opacity: 60%;
+}
+
+.education-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #202020;
+    margin-top: 100px;
+    padding: 60px 0;
+}
+.education-section-title{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.education-section-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.education-section > hr{
+    width: 51px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.education-section-element > img{
+    width: 100px;
+    height: 100px;
+    margin-top: 23px;
+}
+
+.education-section-element-title{
+    display: flex;
+    margin-top: 23px;
+}
+
+.education-section-element-title .title{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.education-section-element-title .year {
+    font-size: 19px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.education-section-location{
+    display: flex;
+    margin-top: 5px;
+}
+
+.education-section-location div{
+    font-size: 16px;
+    color: #777777;
+    margin-left: 9px;
+}
+
+.dashed-horizontal-line{
+    margin-top: 23px;
+}
+
+.education-section-button{
+    display: flex;
+    background-color: #292929;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background-color ease 0.3s;
+}
+
+.education-section-button:hover{
+    background-color: #333333;
+}
+
+.education-section-button div{
+    color: #9A9A9A;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.school-rank{
+    display: flex;
+    margin-top: 5px;
+}
+.school-rank div{
+    font-size: 16px;
+    color: #777777;
+    margin-left: 9px;
+}
+
+.graduation-date{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+footer{
+    margin-top: 40px;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
 }
